@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    background-color: #f2f4f7;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #007BFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.container img {
+    width: 50px;
+    height: 50px;
+}
+
+.container button {
+    color: #ffffff;
+    cursor: pointer;
+    padding: 12px 20px;
+    border: none;
+    background-color: #007BFF;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: background 0.3s ease;
+}
+
+.container button:hover {
+    background-color: #004494;
+}
+
+.container button:active {
+    transform: scale(0.95);
+}
+
+#homepage {
+    padding: 2rem;
+    text-align: center;
+}
+
+#khungdau {
+    margin: 1.5rem auto;
+    padding: 15px 30px;
+    border: 3px solid white;
+    background-color: #007BFF;
+    border-radius: 30px;
+    width: calc(100% - 200px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#trangthai, #h3trangthai {
+    font-size: 1.2rem;
+    color: white;
+}
+
+#kiemtra {
+    margin: 1.5rem auto;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #007BFF;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+#kiemtra h1 {
+    font-size: 1.8rem;
+    color: #007BFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#kiemtra label {
+    font-size: 1rem;
+    color: #007BFF;
+    margin-right: 10px;
+}
+
+#kiemtra .form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#kiemtra input[type="date"],
+#kiemtra input[type="text"] {
+    padding: 8px;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    width: calc(100% - 120px);
+    font-size: 1rem;
+}
+
+#kiemtra button {
+    background: #007BFF;
+    margin: 20px 0;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#kiemtra button:hover {
+    background: #0056b3;
+}
+
+#tablecon {
+    display: none;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+#tablecon table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+#tablecon th, #tablecon td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+#add {
+    width: 90%;
+    max-width: 500px;
+    padding: 1.5rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    border: 2px solid #007BFF;
+}
+
+#add h1 {
+    font-size: 1.5rem;
+    color: #007BFF;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.toanbo input[type="text"],
+.toanbo input[type="number"],
+.toanbo input[type="email"]{
+    border-radius: 5px;
+    width: 400px;
+    border: 1px solid #007BFF;
+    padding: 5px;
+    margin-top: 5px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    
+}
+
+
+.toanbo .add-line3 .lable-3 {
+    margin-left: 18px !important;
+}
+.toanbo label {
+    margin: 5px;
+    max-width: 100px !important;
+    margin-right: 20px;
+    text-align: center;
+        color: #007BFF;
+
+}
+
+.toanbo button {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+.toanbo button:hover {
+    background-color: #0056b3;
+}
+
+@media screen and (max-width: 600px) {
+    #khungdau, #kiemtra, #add {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    .container button {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+
+#line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px auto;
+    width: calc(100% - 40px);
+    max-width: 1200px;
+}
+
+.line1, .line2 {
+    background-color: #ffffff;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-right: 10px;
+    height: 200px;
+}
+
+.line1 button,
+.line2 button {
+    margin-right: 5px;
+    background-color: #ffffff;
+    border: 2px solid #007BFF;
+    color: #007BFF;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.line1 button:hover,
+.line2 button:hover {
+    background-color: #e7f0ff;
+}
+
+.line1 h2, .line2 h2 {
+    color: #007BFF;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.line1 p, .line2 p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+@keyframes trangthai {
+    from{
+        transform: translateX(-100%);
+    }
+}
+@keyframes trangthai1 {
+    from{
+        height: 25rem;
+    }
+    to{
+        height: 50rem;
+    }
+}
+@keyframes trangthai2 {
+    from{
+        height: 50rem;
+    }
+    to{
+        height: 25rem;
+    }
+}

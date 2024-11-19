@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="doanmoicloan.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="container-left">
+            <img src="https://lh3.googleusercontent.com/j5X7P4bzENA18pyrPc9P2DvdNob6BcFsPZp3VUSsSPqAPMjUokUiIfhvl7oPEFLLLTM=w300-rw" alt="logo" />
+            <button id="home">Home</button>
+            <button id="table">Table</button>
+            <button id="infors">Infomations</button>
+
+        </div>
+        <div class="container-right">
+            <button id="addnew">Login</button>
+        </div>
+    </div>
+    <div id="tablecon">
+        <h1 id="tablenum">Hien co: </h1>
+        <table>
+            <tr>
+                <th>Trên xe hiện có</th>
+                <td id="len"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="homepage">
+        <div id="khungdau">
+            <h1 id="trangthai">Trạng thái cửa tại :</h1>
+                <h3 id="h3trangthai">Đóng và Có .. người đã vô</h3>
+        </div>
+        
+            
+        <div id="kiemtra">
+            <h1>Kiểm Tra</h1>
+            <label for="ngaykiemtra">Ngày :</label>
+            <input id="ngaykiemtra" type="date" placeholder="Chọn ngày">
+            <br>
+            <br>
+            <label for="tenkiemtra">Tên :</label>
+            <input type="text" placeholder="Điền tên để kiểm tra" id="tenkiemtra">
+            <br>
+            <button id="nutkiemtra">Kiểm Tra</button>
+            <div id="chuahinh">
+                <img id="firebaseImage" alt="Ảnh vô" width="300" height="200" />
+                <h1 id="comat"></h1>
+                <img id="firebaseImageRA" alt="Ảnh ra" width="300" height="200" />
+                <h1 id="xuong"></h1>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div id="add">
+        <h1>Login</h1>
+        <div class="toanbo">
+            <div class="add-line1">
+                <input class="checkbox" type="checkbox" id="employee" >
+                <label for="employee">Student</label>
+                <input type="checkbox" id="owner" >
+                <label for="owner">Teacher</label>
+                <input type="checkbox" id="ofter" >
+                <label for="ofter">Ofter</label>
+            </div>
+            <div class="add-line2">
+                <label  for="name">Name :</label>
+                <input type="text" id="name">
+            </div>
+            <div class="add-line3">
+                <label class="lable-3" for="age">Age   :</label>
+                <input type="number" id="age" value="18" min="12" max="60">
+            </div>
+            <div class="add-line4">
+                <label for="email">Email :</label>
+                <input type="text" id="email">
+            </div>
+                <button id="submit">Submit</button>
+        </div>
+    </div>
+    <div id="line">
+        <div class="line1">
+            <h2>
+                <button id="button1">+</button>Purpose
+            </h2>
+            <p id="purposenho">This website will connect the user with a tool to check whether the employees are current ontime or not.</p>
+        </div>
+        <div class="line2">
+            <h2>
+                <button id="button2">+</button>How to use
+            </h2>
+                <div id="howtonho">
+                <p id="howtonho1">First, you need to add your details to receive your own RFID card.</p>
+                <p id="howtonho2">If everything is processed correctly, when you arrive, the RFID system can scan your card, and your recent information will be stored.</p>    
+                <p id="howtonho3">This website allows both you and the establishment to view the information.</p>
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"> </script>	
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"> </script>	
+    <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-storage.js"> </script>
+    <script src="doanmoiclone.js" ></script>
+    
+</body>
+</html>
